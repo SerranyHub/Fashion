@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* General reset for the navbar */
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Align items horizontally */
+    justify-content: center; /* Center the navbar */
+    background-color: #4CAF50; /* Dark background color */
+    padding: 10px 0; /* Add padding to the navbar */
+}
+
+/* Style for each navigation link */
+nav ul li {
+    margin: 0 15px; /* Add spacing between links */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* White text color */
+    font-size: 18px; /* Adjust font size */
+    padding: 10px 15px; /* Add padding for clickable area */
+    display: block; /* Make the link fill the list item */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for links */
+nav ul li a:hover {
+    background-color: #575757; /* Slightly lighter background on hover */
+    border-radius: 5px; /* Rounded corners for hover effect */
+}
+
+/* Optional: Make the navbar sticky at the top */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+input, textarea, button {
+    margin-top: 0.5rem;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: white;
+    background-color: #333;
+    height: 60px;
+}
+
+footer p{
+    padding-top: 20px;
+}
+
+
+/* Style for the ASD class */
+.text {
+    margin-top: 20px; /* Adds space above the section */
+    font-size: 23px; /* Increases the font size */
+    line-height: 2.0; /* Improves readability by increasing line spacing */
+    color: #333; /* Optional: Adjust text color */
+}

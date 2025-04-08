@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/Css/Sign.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Sign Up</title>
+</head>
+<body>
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe6f2;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.signup-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+.signup-container h1 {
+    color: #ff66b2;
+    margin-bottom: 20px;
+}
+.signup-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ff99cc;
+    border-radius: 5px;
+}
+.signup-container a {
+    background-color: #ff66b2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+
+.signup-container button {
+	width: 300px;
+	height: 40px;
+	background: pink;
+    border: none;
+	margin-top: 13px;
+	color: #fff;
+	font-size: 15px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.signup-container button:focus{
+	outline: none;
+}
+.signup-container button:hover {
+    background-color: #e0559e;
+}
+
+    </style>
+
+    <div class="signup-container">
+        <h1>Sign Up</h1>
+        <form id="signup-form" action="https://formsubmit.co/serranystyles@gmail.com" method="POST">
+            <input type="hidden" name="access_key" value="775a7629c60969e8b5d7b2299c067ebb">
+            <input type="text" name="full_name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required>
+            <p id="error-message" style="color: red; display: none;">Passwords do not match or are too short!</p>
+            <button type="submit">Sign Up</button> 
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("signup-form").addEventListener("submit", function(event) {
+            const password = document.getElementById("password").value;
+            const confirmPassword = document.getElementById("confirm_password").value;
+            const errorMessage = document.getElementById("error-message");
+
+            // Check if passwords match and are at least 3 characters long
+            if (password !== confirmPassword || password.length < 3) {
+                event.preventDefault(); // Prevent form submission
+                errorMessage.style.display = "block"; // Show error message
+                errorMessage.textContent = "Passwords do not match or are too short!"; // Update error message
+            } else {
+                errorMessage.style.display = "none"; // Hide error message
+            }
+        });
+    </script>
+</body>
+</html>
+
+

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Assets/Css/fashionn.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <title>Fashion</title>
+        <style>
+            /* Prevent horizontal scrolling */
+            body {
+                margin: 0;
+                padding: 0;
+                overflow-x: hidden; /* Disable horizontal scrolling */
+            }
+
+            /* Ensure all elements fit within the viewport */
+            * {
+                box-sizing: border-box;
+            }
+
+            /* Fix images and content sections */
+            img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+            }
+
+            .content-section {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+                margin: 0 auto;
+                padding: 10px;
+            }
+
+            /* Fix navigation menu */
+            .nav-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                padding: 10px;
+            }
+
+            .ull {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .ull li {
+                margin: 0 10px;
+            }
+
+            /* General styling for the hamburger icon */
+            .hamburger {
+                cursor: pointer;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 20px;
+                width: 30px;
+            }
+
+            /* Move the hamburger icon to the right on smaller devices */
+            @media (max-width: 768px) {
+                .hamburger {
+                    margin-left: auto; /* Push the hamburger icon to the right */
+                }
+
+                .nav-container {
+                    flex-direction: row; /* Ensure the nav container stays in a row layout */
+                    align-items: center;
+                }
+
+                .ull {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+
+                .content-section {
+                    flex-direction: column;
+                }
+            }
+
+            /* Ensure footer fits */
+            footer {
+                text-align: center;
+                padding: 10px;
+                word-wrap: break-word;
+            }
+        </style>
+    </head>
+<body>
+    <div class="nav-container">
+        <span class="brand">Serrany Styles</span>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <a href="Log.html" class="login-link desktop-only">Login</a> <!-- Login link for larger screens -->
+        <nav id="nav-menu">
+            <ul class="ull">
+                <li><a href="About.html">About</a></li>
+                <li><a href="Service.html">Services</a></li>
+                <li><a href="Contact us.html">Contact Us</a></li>
+                <li class="mobile-only"><a href="Log.html">Login</a></li> <!-- Login link for small screens -->
+            </ul>
+        </nav>
+    </div>
+    <div class="text"><p>Welcome To The Official Page Of Serrany Designs<br>Feel Free To Check Out All Our Designs And Make Haste While The Sun Shines<br>If You Feel You Like Any Of Them Go To Our Contact Link And Make Demands Now!!</p></div>
+    <hr>
+
+    <div class="content-section">
+        <div class="content-item">
+            <img src="Assets/Cloth.jpg" alt="Design 1" class="zoomable">
+        </div>
+        <div class="content-item">
+            <img src="Assets/Cloth 2.jpg" alt="Design 2" class="zoomable">
+        </div>
+        <div class="content-item">
+            <img src="Assets/Cloth 3.jpg" alt="Design 3" class="zoomable">
+        </div>
+    </div>
+
+    <div class="content-section">
+        <div class="content-item">
+            <img src="Assets/Dress.jpg" alt="Design 1" class="zoomable">
+        </div>
+        <div class="content-item">
+            <img src="Assets/Dress2.jpg" alt="Design 2" class="zoomable">
+        </div>
+        <div class="content-item">
+            <img src="Assets/Dress 3.jpg" alt="Design 3" class="zoomable">
+        </div>
+    </div>
+
+    <div class="content-section">
+        <div class="content-item">
+            <img src="Assets/Miri.jpg" alt="Design 1" class="zoomable">
+        </div>
+        <div class="content-item">
+            <img src="Assets/Miri 2.jpg" alt="Design 2" class="zoomable">
+        </div>
+        <div class="content-item">
+            <img src="Assets/Miri 3.jpg" alt="Design 3" class="zoomable">
+        </div>
+    </div>
+
+    <div class="content-section">
+        <div class="content-item">
+            <img src="Assets/Sere.jpg" alt="Design 1" class="zoomable">
+        </div>
+        <div class="content-item">
+            <img src="Assets/Seree2.jpg" alt="Design 2" class="zoomable">
+        </div>
+        <div class="content-item">
+            <img src="Assets/Seree3.jpg" alt="Design 3" class="zoomable">
+        </div>
+    </div>
+
+    <div class="content-section">
+        <div class="content-item">
+            <img src="Assets/Water.jpeg" alt="Design 1" class="zoomable">
+        </div>
+        <div class="content-item">
+            <img src="Assets/Water 2.jpg" alt="Design 2" class="zoomable">
+        </div>
+        <div class="content-item">
+            <img src="Assets/Serre.jpg" alt="Design 3" class="zoomable">
+        </div>
+
+    </div>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <p>We use cookies to improve your experience on our site. By using our site, you accept our <a href="Privacyp.html" target="_blank">Privacy Policy</a>.</p>
+        <button id="accept-cookies">Accept</button>
+    </div>
+
+    <script src="script.js"></script>
+    <footer>
+        <p>SerranyStyles</p>
+        <a>Fashion Blogs<br>Traditional Wears<br><br>&copy; 2025 SerranyStlyes. All rights reserved.</a>
+        <div class="footer-icons">
+            <a class="fb" href="https://www.facebook.com/your-facebook-profile.php?id=61575022676799" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a class="twit" href="https://twitter.com/SerranyStyles" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a class="insta" href="https://instagram.com/serranystyles/" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a class="whatsapp" href="https://wa.me/08036702670" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </footer>
+<script src="Assets/Java/Fashio.js"></script>
+</body>
+</html>
